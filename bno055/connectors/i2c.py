@@ -41,7 +41,7 @@ class I2C(Connector):
 
     CONNECTIONTYPE_I2C = 'i2c'
 
-    def __init__(self, node: Node, i2c_bus=0, i2c_addr=registers.BNO055_ADDRESS_A):
+    def __init__(self, node: Node, i2c_bus=1, i2c_addr=registers.BNO055_ADDRESS_A):
         """Initialize the I2C class.
         
         :param node: a ROS node
