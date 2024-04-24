@@ -29,11 +29,11 @@ When using a CP2104 USB-to-UART Bridge:
 ---
 ## ROS Node Parameters
 
-To configure with your own settings please adjust the [node parameter file](bno055/params/bno055_params.yaml) and pass it
+To configure with your own settings please adjust the [node parameter file](bno055/params/bno055_params_i2c.yaml) and pass it
 as an argument when starting the node:
 
 ```
-ros2 run bno055 bno055 --ros-args --params-file ./src/bno055/bno055/params/bno055_params.yaml
+ros2 run bno055 bno055 --ros-args --params-file ./src/bno055/bno055/params/bno055_params_i2c.yaml
 ```
 
 ### UART Connection
@@ -134,7 +134,7 @@ Run the `bno055` ROS2 node with default parameters:
     
 Run with customized parameter file:
 
-    ros2 run bno055 bno055 --ros-args --params-file ./src/bno055/bno055/params/bno055_params.yaml
+    ros2 run bno055 bno055 --ros-args --params-file ./src/bno055/bno055/params/bno055_params_i2c.yaml
     
 Run launch file:
 
